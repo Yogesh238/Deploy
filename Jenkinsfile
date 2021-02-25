@@ -14,11 +14,6 @@ pipeline {
             steps {
                 sh 'mvn compile'
             }
-        }
-         stage('Build') {
-            steps {
-                sh 'mvn -B -DskipTests clean package'
-            }
         }   
         stage('Test') {
             steps {
