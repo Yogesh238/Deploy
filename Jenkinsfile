@@ -30,11 +30,6 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-            steps {
-                sh './jenkins/scripts/deliver.sh'
-            }
-        }
         stage("Package"){
            steps{
               sh "mvn package"
